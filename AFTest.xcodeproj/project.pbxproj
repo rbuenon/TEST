@@ -18,6 +18,9 @@
 		45646E4A16D925740048D422 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45646E4916D925740048D422 /* Default-568h@2x.png */; };
 		45646E4D16D925740048D422 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45646E4B16D925740048D422 /* MainStoryboard.storyboard */; };
 		45646E5016D925740048D422 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45646E4F16D925740048D422 /* ViewController.m */; };
+		45C7319F16DA70750001EEC2 /* ApiAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C7319E16DA70750001EEC2 /* ApiAccess.m */; };
+		45C731A916DA7F520001EEC2 /* Colour.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C731A816DA7F520001EEC2 /* Colour.m */; };
+		699846FAE1F843269E0BEEB3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8FDB9832964252B2A97A4E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		45646E4C16D925740048D422 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		45646E4E16D925740048D422 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		45646E4F16D925740048D422 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		45C7319D16DA70750001EEC2 /* ApiAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiAccess.h; sourceTree = "<group>"; };
+		45C7319E16DA70750001EEC2 /* ApiAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiAccess.m; sourceTree = "<group>"; };
+		45C731A716DA7F520001EEC2 /* Colour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colour.h; sourceTree = "<group>"; };
+		45C731A816DA7F520001EEC2 /* Colour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colour.m; sourceTree = "<group>"; };
+		8AC34AD3552944E69E7EAC1C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		FB8FDB9832964252B2A97A4E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 				45646E3416D925740048D422 /* UIKit.framework in Frameworks */,
 				45646E3616D925740048D422 /* Foundation.framework in Frameworks */,
 				45646E3816D925740048D422 /* CoreGraphics.framework in Frameworks */,
+				699846FAE1F843269E0BEEB3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +68,7 @@
 			children = (
 				45646E3916D925740048D422 /* AFTest */,
 				45646E3216D925740048D422 /* Frameworks */,
-				45646E3116D925740048D422 /* Products */,
+				8AC34AD3552944E69E7EAC1C /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +83,11 @@
 		45646E3216D925740048D422 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45646E3116D925740048D422 /* Products */,
 				45646E3316D925740048D422 /* UIKit.framework */,
 				45646E3516D925740048D422 /* Foundation.framework */,
 				45646E3716D925740048D422 /* CoreGraphics.framework */,
+				FB8FDB9832964252B2A97A4E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,6 +101,10 @@
 				45646E4E16D925740048D422 /* ViewController.h */,
 				45646E4F16D925740048D422 /* ViewController.m */,
 				45646E3A16D925740048D422 /* Supporting Files */,
+				45C7319D16DA70750001EEC2 /* ApiAccess.h */,
+				45C7319E16DA70750001EEC2 /* ApiAccess.m */,
+				45C731A716DA7F520001EEC2 /* Colour.h */,
+				45C731A816DA7F520001EEC2 /* Colour.m */,
 			);
 			path = AFTest;
 			sourceTree = "<group>";
@@ -117,6 +133,7 @@
 				45646E2C16D925740048D422 /* Sources */,
 				45646E2D16D925740048D422 /* Frameworks */,
 				45646E2E16D925740048D422 /* Resources */,
+				CD80CE4744A94FCA846BC9D4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +185,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CD80CE4744A94FCA846BC9D4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		45646E2C16D925740048D422 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -176,6 +210,8 @@
 				45646E4016D925740048D422 /* main.m in Sources */,
 				45646E4416D925740048D422 /* AppDelegate.m in Sources */,
 				45646E5016D925740048D422 /* ViewController.m in Sources */,
+				45C7319F16DA70750001EEC2 /* ApiAccess.m in Sources */,
+				45C731A916DA7F520001EEC2 /* Colour.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +295,7 @@
 		};
 		45646E5416D925740048D422 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC34AD3552944E69E7EAC1C /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AFTest/AFTest-Prefix.pch";
@@ -270,6 +307,7 @@
 		};
 		45646E5516D925740048D422 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC34AD3552944E69E7EAC1C /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AFTest/AFTest-Prefix.pch";
@@ -298,6 +336,7 @@
 				45646E5516D925740048D422 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
